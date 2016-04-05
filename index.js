@@ -4,5 +4,6 @@ module.exports = {
   createMedicationStatement: require('./helper_methods/medication-statement'),
   createOrganization: require('./helper_methods/organization'),
   createPatient: require('./helper_methods/patient'),
-  createPractitioner: require('./helper_methods/practitioner')
+  createPractitioner: require('./helper_methods/practitioner'),
+  createBundle: require('./helper_methods/bundle')
 }
