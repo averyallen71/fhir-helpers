@@ -7,18 +7,18 @@ module.exports = function (data) {
    code:{
 		coding:[
 					{
-					"system:"http://loinc.org",
-					"code: data.loincCode
-					"display: data.displayText
+					system:"http://loinc.org",
+					code: data.loincCode,
+					display: data.displayText
  					}
 				]
 		},
     
     subject:{
-        "reference:"patient/" + data.subjectId
+        reference:"patient/" + data.subjectId
     },
     encounter:{
-        "reference:"Encounter/" + data.encounterId
+        reference:"Encounter/" + data.encounterId
     },
     effectiveDateTime: data.dateTime,
     valueQuantity:{
@@ -28,3 +28,4 @@ module.exports = function (data) {
         code: data.vqCode
     }
   }
+}
