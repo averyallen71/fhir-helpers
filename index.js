@@ -6,4 +6,5 @@ module.exports = {
   createPatient: require('./helper_methods/patient'),
   createPractitioner: require('./helper_methods/practitioner'),
   createBundle: require('./helper_methods/bundle')
+  createObservation: require('./helper_methods/observation')
 }
